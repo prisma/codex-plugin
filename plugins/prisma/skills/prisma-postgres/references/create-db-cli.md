@@ -48,7 +48,7 @@ Top-level commands currently exposed:
 | `--interactive [boolean]` | `-i` | Open region selector |
 | `--json [boolean]` | `-j` | Output machine-readable JSON |
 | `--env [string]` | `-e` | Write `DATABASE_URL` and `CLAIM_URL` into a target `.env` |
-| `--ttl [string]` | `-t` | Auto-delete after a TTL like `30m` or `1h-24h` |
+| `--ttl [string]` | `-t` | Auto-delete after a TTL like `30m` or `1h-72h` (default and maximum `72h`) |
 | `--copy [boolean]` | `-c` | Copy the connection string to the clipboard |
 | `--quiet [boolean]` | `-q` | Only print the connection string |
 | `--open [boolean]` | `-o` | Open the claim URL in your browser |
@@ -56,7 +56,7 @@ Top-level commands currently exposed:
 ## Lifecycle and claim flow
 
 - Databases are temporary by default.
-- Unclaimed databases are auto-deleted after ~24 hours.
+- Unclaimed databases are auto-deleted after 72 hours.
 - Claim the database using the URL shown in command output to keep it permanently.
 
 ## Programmatic usage (library API)

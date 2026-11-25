@@ -65,7 +65,7 @@ npx create-postgres@latest
 
 For app integrations, you can also use the programmatic API (`create()` / `regions()`) from the `create-db` npm package.
 
-Temporary databases auto-delete after ~24 hours unless claimed.
+Temporary databases auto-delete after 72 hours unless claimed.
 
 ### 3. Link an existing local project
 
